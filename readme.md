@@ -35,12 +35,11 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 
 ```text
 .
-├── 📂[Day 1 – JavaScript Basics](./Day1-basics)
+├── 📂[Day 1 – JavaScript Basics]
 │   ├── variables.js
 │   ├── functions.js
 │   └── calculator.js
-├── 📂[Day 2 – Functions & Control Structures](./Day2-functions)
-│   ├── functions.js
+├── 📂[Day 2 – Functions & Control Structures]
 │   ├── calculator.js
 │   └── controlStructures.js
 └── README.md
