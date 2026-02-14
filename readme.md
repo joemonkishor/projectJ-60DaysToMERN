@@ -7,13 +7,13 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 
 ## 📅 Daily Progress
 
-### Day 1 – JavaScript Basics
+### [Day 1 – JavaScript Basics](./Day1-basics)
 - Practiced variables (`let`, `const`) and operators.
 - Wrote simple functions (declaration, arrow functions).
 - Built a **calculator script** using `switch` for operators.
 - Pushed files into `Day1-basics/`.
 
-### Day 2 – Functions & Control Structures
+### [Day 2 – Functions & Control Structures](./Day2-functions)
 - Practiced function declaration, arrow functions, and expressions.
 - Built **cartItemsTotal** function with `switch(true)` for categorizing expenses.
 - Used loops (`for`, `for...of`) to iterate through arrays.
@@ -32,20 +32,19 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 ---
 
 ## 📂 Repo Structure
-projectJ-60DaysToMERN/
-│
-├── Day1-basics/
+
+```text
+.
+├── 📂[Day1-basics](./Day1-basics)
 │   ├── variables.js
 │   ├── functions.js
 │   └── calculator.js
-│
-├── Day2-functions/
+├── 📂[Day2-functions](./Day2-functions)
 │   ├── functions.js
 │   ├── calculator.js
 │   └── controlStructures.js
-│
 └── README.md
-
+```
 
 ---
 
