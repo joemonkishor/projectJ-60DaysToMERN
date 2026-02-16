@@ -20,6 +20,13 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 - Applied `if/else` to check spending thresholds.
 - Pushed files into `Day2-functions/`.
 
+### [Day 3 – Arrays & Objects](./Day3-arrays-objects)
+- Practiced array methods (`push`, `pop`, `map`, `filter`, `reduce`).
+- Created objects with properties and methods.
+- Built a mini Expense List Manager using arrays of objects.
+- Pushed files into `Day3-arrays-objects/`.
+
+
 ---
 
 ## 🛠️ Tech Stack (Planned)
@@ -35,13 +42,18 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 
 ```text
 .
-├── 📂[Day 1 – JavaScript Basics]
+├── 📂Day1-basics/
 │   ├── variables.js
 │   ├── functions.js
 │   └── calculator.js
-├── 📂[Day 2 – Functions & Control Structures]
+├── 📂Day2-functions/
+│   ├── functions.js
 │   ├── calculator.js
 │   └── controlStructures.js
+├── 📂Day3-arrays-objects/
+│   ├── arrays.js
+│   ├── objects.js
+│   └── expenseManager.js
 └── README.md
 ```
 
