@@ -53,6 +53,12 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 - Handled both success and error cases for realistic API behavior.
 
 
+### [Day 6 – Error Handling](./Day6-error-handling)
+- Practiced basic error handling with `try/catch`.
+- Handled errors in Promises using `.catch()`.
+- Used `try/catch` with async/await for cleaner error management.
+
+
 ## 🛠️ Tech Stack (Planned)
 - JavaScript (ES6+)
 - Node.js, Express.js
@@ -89,6 +95,10 @@ projectJ-60DaysToMERN/
 │   ├── asyncAwait.js      // Simple async/await example with data fetch
 │   └── fakeApi.js         // Weather app simulation using async/await
 │
+├── Day6-error-handling/
+│   ├── errorHandling-basic.js
+│   ├── errorHandling-promises.js
+│   └── errorHandling-asyncAwait.js
 └── README.md
 
 ```
