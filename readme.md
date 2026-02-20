@@ -76,15 +76,6 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 ---
 
 
-## 🛠️ Tech Stack (Planned)
-- JavaScript (ES6+)
-- Node.js, Express.js
-- MongoDB
-- React.js
-- AI APIs (OpenAI, Hugging Face)
-
----
-
 ## 📂 Repo Structure
 
 ```text
