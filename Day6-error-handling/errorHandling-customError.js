@@ -17,7 +17,7 @@ function checkAge(age){
 
 
 }
-
+//try
 try{
   console.log(checkAge(14));
 }catch(error){
