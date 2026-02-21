@@ -64,6 +64,14 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
   - Used `instanceof` to distinguish between `ValidationError` and `AuthError`.
   - Showed scalable error handling for multiple error types.
 
+### [Day 8 – Classes & Inheritance](./Day8-classes-inheritance)
+- Practiced ES6 class syntax with constructors and methods.
+- Created a `Person` class with `name` and `age` properties.
+- Extended `Person` into a `User` class with additional properties (`email`, `role`, `password`).
+- Implemented `login()` method to validate password and throw `AuthError` if incorrect.
+- Implemented `updateEmail()` method to validate email format and throw `ValidationError` if invalid.
+- Demonstrated inheritance, modular structure, and error handling together in `index.js`.
+
 ---
 
 ## 🛠️ Tech Stack (Planned)
@@ -109,6 +117,11 @@ projectJ-60DaysToMERN/
 │   ├── validation.js
 │   ├── index-basic.js
 │   └── index-advanced.js
+├── Day8-classes-inheritance/
+│   ├── Person.js
+│   ├── User.js
+│   ├── errors.js
+│   └── index.js
 └── README.md
 
 ```
