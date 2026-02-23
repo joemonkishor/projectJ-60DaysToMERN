@@ -72,7 +72,7 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 - Implemented `updateEmail()` method to validate email format and throw `ValidationError` if invalid.
 - Demonstrated inheritance, modular structure, and error handling together in `index.js`.
 
-## Day 9 - Express Server Setup
+## Day 9 - [Express Server Setup](./Day9-node-express/)
 
 - Initialized Node project and installed Express
 - Created `server.js` with basic routes:
@@ -81,6 +81,13 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
   - `/contact` → Contact
   - `/login` → Login
 - Added 404 handler for unknown routes
+
+## Day 10 – [Advanced Express Server Practice](./Day10-express-advanced/)
+
+- Basic express setup
+- Json responses
+- ReQuery parameters
+- Route parameters
 ---
 
 ## 🛠️ Tech Stack (Planned)
@@ -145,8 +152,13 @@ projectJ-60DaysToMERN/
 │   ├── package-lock.json
 │   └── server.js
 │
+├── Day10-express-advanced/
+│   ├── server.js       
+│   ├── package.json     
+│   └── README.md        
 ├── .gitattributes
 └── readme.md
+
 ```
 
 ---
