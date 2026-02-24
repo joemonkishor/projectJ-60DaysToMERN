@@ -29,23 +29,11 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 - Demonstrated integration of User and ExpenseManager in `integration.js`.
 
 ### [Day 5 – Functions + Async](./Day5-functions-async)
-**Callbacks**
-- Practiced callback structures with `doubleNumber` and `isPasswordValid`.
-- Demonstrated how functions can be passed and executed later.
 
-**Promises**
-- Implemented `fetchDataPromise` with `.then()` and `.catch()`.
-- Built a Password Manager using Promises to validate user input.
-- Created a Weather App simulation using Promises to fetch city temperature.
+- Practiced callbacks, promises, and async/await with error handling.
+- Built a fake API simulation to mimic real API latency and responses.
+- Added fetch.js to practice real API calls (PokeAPI) using both (`.then()`/,`.catch()` and `async/await`).
 
-**Async/Await**
-- Converted Promise handling into async/await syntax for cleaner code.
-- Checked error handling with `try/catch`.
-
-**Fake API Simulation**
-- Built a weather API simulation (`fakeApi.js`) using Promises and async/await.
-- Simulated API latency with `setTimeout`.
-- Handled both success and error cases for realistic API behavior.
 
 ### [Day 6 – Error Handling](./Day6-error-handling)
 - Practiced basic error handling with `try/catch`.
@@ -128,6 +116,7 @@ projectJ-60DaysToMERN/
 │   ├── promises.js
 │   ├── asyncAwait.js
 │   └── fakeApi.js
+|   └── fetch.js
 │
 ├── Day6-error-handling/
 │   ├── errorHandling-basic.js
