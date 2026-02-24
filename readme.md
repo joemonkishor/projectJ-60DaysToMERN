@@ -76,6 +76,13 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 - Json responses
 - ReQuery parameters
 - Route parameters
+
+## Day 11 – [Express Middleware & Modular Routes](./Day11-express-middleware/)
+
+- Implemented custom middleware (`logger.js`) and centralized error handling (`errorHandler.js`).
+- Modularized routes with `express.Router()` in `members.js` to handle full CRUD operations.
+- Verified all routes and error cases in Postman with clean JSON responses.
+
 ---
 
 ## 🛠️ Tech Stack (Planned)
@@ -144,7 +151,16 @@ projectJ-60DaysToMERN/
 ├── Day10-express-advanced/
 │   ├── server.js       
 │   ├── package.json     
-│   └── README.md        
+│   └── README.md  
+│
+├── Day11-Middleware-Routes/
+│   ├── server.js
+│   ├── routes/
+│   │   └── members.js
+│   ├── middleware/
+│   │   ├── logger.js
+│   │   └── errorHandler.js
+│   └── README.md    
 ├── .gitattributes
 └── readme.md
 
