@@ -60,7 +60,7 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 - Implemented `updateEmail()` method to validate email format and throw `ValidationError` if invalid.
 - Demonstrated inheritance, modular structure, and error handling together in `index.js`.
 
-### Day 9 - [Express Server Setup](./Day9-node-express/)
+### [Day 9 - Express Server Setup](./Day9-node-express/)
 
 - Initialized Node project and installed Express
 - Created `server.js` with basic routes:
@@ -70,22 +70,29 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
   - `/login` → Login
 - Added 404 handler for unknown routes
 
-### Day 10 – [Advanced Express Server Practice](./Day10-express-advanced/)
+### [Day 10 – Advanced Express Server Practice](./Day10-express-advanced/)
 
 - Basic express setup
 - Json responses
 - ReQuery parameters
 - Route parameters
 
-### Day 11 – [Express Middleware & Modular Routes](./Day11-express-middleware/)
+### [Day 11 – Express Middleware & Modular Routes](./Day11-express-middleware/)
 
 - Implemented custom middleware (`logger.js`) and centralized error handling (`errorHandler.js`).
 - Modularized routes with `express.Router()` in `members.js` to handle full CRUD operations.
 - Verified all routes and error cases in Postman with clean JSON responses.
 
-### Day 12 - [MongoDB Integration with Express](./Day12-MongoDB-Integration/)
+### [Day 12 - MongoDB Integration with Express](./Day12-MongoDB-Integration/)
 - Integrated express server with Mongo Database
 - Tested CRUD with Mongo DB.
+
+### [Day 13 - Advanced Query Features](./Day13-Advanced-Queries/) 
+- Implemented **filtering, sorting, and pagination** in the Members API. 
+- Centralized error handling for validation errors, invalid IDs, and duplicate entries. 
+- Added request logging middleware for better debugging. 
+- Enhanced CRUD routes with professional JSON responses (`success`, `data`, `count`, `page`). 
+- Tested multiple query combinations in Postman (filter + sort + paginate).
 
 ---
 
@@ -126,7 +133,7 @@ projectJ-60DaysToMERN/
 │   ├── callbacks.js
 │   ├── promises.js
 │   ├── asyncAwait.js
-│   └── fakeApi.js
+│   ├── fakeApi.js
 │   └── fetch.js
 │
 ├── Day6-error-handling/
@@ -178,8 +185,20 @@ projectJ-60DaysToMERN/
 │   ├── .env
 │   └── README.md
 │
+├── Day13-Advanced-Queries/
+│   ├── server.js
+│   ├── routes/
+│   │   └── members.js
+│   ├── middleware/
+│   │   ├── logger.js
+│   │   └── errorHandler.js
+│   ├── models/
+│   │   └── member.models.js
+│   └── README.md
+│
 ├── .gitattributes
 └── readme.md
+
 
 ```
 
