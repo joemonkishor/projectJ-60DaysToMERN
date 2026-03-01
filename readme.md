@@ -94,6 +94,12 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 - Enhanced CRUD routes with professional JSON responses (`success`, `data`, `count`, `page`). 
 - Tested multiple query combinations in Postman (filter + sort + paginate).
 
+
+### [Day 14 – Validation & Error Handling](./Day14-validation) 
+- Revised query features (filtering, sorting, pagination) from Day 13. 
+- Added **Joi validation** for POST/PUT requests and centralized error handling for 
+  cleaner API responses. 
+
 ---
 
 ## 🛠️ Tech Stack (Planned)
@@ -103,13 +109,13 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 - React.js
 - AI APIs (OpenAI, Hugging Face)
 
----
 
 
 ## 📂 Repo Structure
 
 ```text
 projectJ-60DaysToMERN/
+│
 ├── Day1-basics/
 │   ├── variables.js
 │   ├── functions.js
@@ -194,6 +200,20 @@ projectJ-60DaysToMERN/
 │   │   └── errorHandler.js
 │   ├── models/
 │   │   └── member.models.js
+│   └── README.md
+│
+├── Day14-validation/
+│   ├── server.js
+│   ├── config.js
+│   ├── routes/
+│   │   └── member.js
+│   ├── middlewares/
+│   │   ├── logger.js
+│   │   └── errorHandler.js
+│   ├── models/
+│   │   └── member.models.js
+│   ├── validation/
+│   │   └── memberValidation.js
 │   └── README.md
 │
 ├── .gitattributes
