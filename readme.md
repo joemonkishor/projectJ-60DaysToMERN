@@ -29,11 +29,9 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 - Demonstrated integration of User and ExpenseManager in `integration.js`.
 
 ### [Day 5 – Functions + Async](./Day5-functions-async)
-
 - Practiced callbacks, promises, and async/await with error handling.
 - Built a fake API simulation to mimic real API latency and responses.
 - Added fetch.js to practice real API calls (PokeAPI) using both (`.then()`/,`.catch()` and `async/await`).
-
 
 ### [Day 6 – Error Handling](./Day6-error-handling)
 - Practiced basic error handling with `try/catch`.
@@ -44,61 +42,44 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 ### [Day 7 – Modules & Imports](./Day7-modules)
 - Practiced splitting code into modules using `export` and `import`.
 - Created `validation.js` with reusable custom error classes (`ValidationError`, `AuthError`) and functions (`checkAge`, `login`).
-- Demonstrated **basic usage** in `index-basic.js`:
-  - Imported only `checkAge`.
-  - Showed simple error handling with `try/catch`.
-- Demonstrated **advanced usage** in `index-advanced.js`:
-  - Imported both functions and error classes.
-  - Used `instanceof` to distinguish between `ValidationError` and `AuthError`.
-  - Showed scalable error handling for multiple error types.
+- Demonstrated **basic usage** in `index-basic.js`.
+- Demonstrated **advanced usage** in `index-advanced.js`.
 
 ### [Day 8 – Classes & Inheritance](./Day8-classes-inheritance)
 - Practiced ES6 class syntax with constructors and methods.
 - Created a `Person` class with `name` and `age` properties.
 - Extended `Person` into a `User` class with additional properties (`email`, `role`, `password`).
-- Implemented `login()` method to validate password and throw `AuthError` if incorrect.
-- Implemented `updateEmail()` method to validate email format and throw `ValidationError` if invalid.
+- Implemented `login()` and `updateEmail()` with error handling.
 - Demonstrated inheritance, modular structure, and error handling together in `index.js`.
 
 ### [Day 9 - Express Server Setup](./Day9-node-express/)
-
 - Initialized Node project and installed Express
-- Created `server.js` with basic routes:
-  - `/` → Home
-  - `/about` → About
-  - `/contact` → Contact
-  - `/login` → Login
-- Added 404 handler for unknown routes
+- Created `server.js` with basic routes.
+- Added 404 handler for unknown routes.
 
 ### [Day 10 – Advanced Express Server Practice](./Day10-express-advanced/)
-
-- Basic express setup
-- Json responses
-- ReQuery parameters
-- Route parameters
+- Practiced query parameters, route parameters, and JSON responses.
 
 ### [Day 11 – Express Middleware & Modular Routes](./Day11-express-middleware/)
-
 - Implemented custom middleware (`logger.js`) and centralized error handling (`errorHandler.js`).
-- Modularized routes with `express.Router()` in `members.js` to handle full CRUD operations.
-- Verified all routes and error cases in Postman with clean JSON responses.
+- Modularized routes with `express.Router()` for CRUD operations.
 
 ### [Day 12 - MongoDB Integration with Express](./Day12-MongoDB-Integration/)
-- Integrated express server with Mongo Database
+- Integrated express server with Mongo Database.
 - Tested CRUD with Mongo DB.
 
 ### [Day 13 - Advanced Query Features](./Day13-Advanced-Queries/) 
 - Implemented **filtering, sorting, and pagination** in the Members API. 
 - Centralized error handling for validation errors, invalid IDs, and duplicate entries. 
-- Added request logging middleware for better debugging. 
-- Enhanced CRUD routes with professional JSON responses (`success`, `data`, `count`, `page`). 
-- Tested multiple query combinations in Postman (filter + sort + paginate).
-
+- Added request logging middleware. 
 
 ### [Day 14 – Validation & Error Handling](./Day14-validation) 
-- Revised query features (filtering, sorting, pagination) from Day 13. 
-- Added **Joi validation** for POST/PUT requests and centralized error handling for 
-  cleaner API responses. 
+- Revised query features from Day 13. 
+- Added **Joi validation** for POST/PUT requests and centralized error handling. 
+
+### [Day 15 – ObjectId Validation](./Day15-objectId-validation)  
+- Added middleware to validate MongoDB ObjectIds in route parameters.  
+- Ensures invalid IDs return `400 Bad Request` and non‑existent IDs return `404 Not Found`.
 
 ---
 
@@ -109,7 +90,7 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 - React.js
 - AI APIs (OpenAI, Hugging Face)
 
-
+---
 
 ## 📂 Repo Structure
 
@@ -216,13 +197,23 @@ projectJ-60DaysToMERN/
 │   │   └── memberValidation.js
 │   └── README.md
 │
+├── Day15-objectId-validation/
+│   ├── server.js
+│   ├── config.js
+│   ├── routes/
+│   │   └── member.js
+│   ├── middlewares/
+│   │   ├── logger.js
+│   │   ├── errorHandler.js
+│   │   └── validateObjectId.js
+│   ├── models/
+│   │   └── member.models.js
+│   ├── validation/
+│   │   └── memberValidation.js
+│   └── README.md
+│
 ├── .gitattributes
 └── readme.md
-
-
-```
-
----
 
 ## 🎯 Final Goal
 Build and deploy an **AI-powered Expense Manager** with:

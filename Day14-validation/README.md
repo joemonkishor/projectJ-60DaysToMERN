@@ -37,8 +37,6 @@ Day 14 builds on the Members API from Day 13 by revising **filtering, sorting, a
       "success": false,
       "message": "Error details here"
     }
-    ```
-
 ---
 
 ## 🛠️ Tech Stack
@@ -48,15 +46,12 @@ Day 14 builds on the Members API from Day 13 by revising **filtering, sorting, a
 - **dotenv** for environment variables
 
 ---
-
----
-
 ## 📖 Key Learning
 - **Validation is required whenever new data is sent in the request body (POST/PUT).**
 - **GET and DELETE only check existence** — no body validation needed.
 - Centralized error handling makes the API cleaner and easier to maintain.
 - Middleware order matters: `express.json()` → `logger` → routes → `errorHandler`.
-
 ---
+
 
 
