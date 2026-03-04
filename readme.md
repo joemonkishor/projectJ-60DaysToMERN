@@ -81,6 +81,9 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 - Added middleware to validate MongoDB ObjectIds in route parameters.  
 - Ensures invalid IDs return `400 Bad Request` and non‑existent IDs return `404 Not Found`.
 
+### [Day 16 – Validation Practice](./Day16-validation-practice/) 
+- Rebuilt the Members API to reinforce Joi validation, ObjectId checks, and      centralized error handling.
+
 ---
 
 ## 🛠️ Tech Stack (Planned)
@@ -147,9 +150,9 @@ projectJ-60DaysToMERN/
 │   └── server.js
 │
 ├── Day10-express-advanced/
-│   ├── server.js       
-│   ├── package.json     
-│   └── README.md  
+│   ├── server.js
+│   ├── package.json
+│   └── README.md
 │
 ├── Day11-Middleware-Routes/
 │   ├── server.js
@@ -158,7 +161,7 @@ projectJ-60DaysToMERN/
 │   ├── middleware/
 │   │   ├── logger.js
 │   │   └── errorHandler.js
-│   └── README.md    
+│   └── README.md
 │
 ├── Day12-MongoDB-Integration/
 │   ├── server.js
@@ -212,9 +215,24 @@ projectJ-60DaysToMERN/
 │   │   └── memberValidation.js
 │   └── README.md
 │
+├── Day16-validation-practice/
+│   ├── server.js
+│   ├── config.js
+│   ├── routes/
+│   │   └── member.js
+│   ├── middlewares/
+│   │   ├── logger.js
+│   │   ├── errorHandler.js
+│   │   └── validateObjectId.js
+│   ├── models/
+│   │   └── member.models.js
+│   ├── validation/
+│   │   └── memberValidation.js
+│   └── README.md
+│
 ├── .gitattributes
 └── readme.md
-
+```
 ## 🎯 Final Goal
 Build and deploy an **AI-powered Expense Manager** with:
 - Expense tracking
