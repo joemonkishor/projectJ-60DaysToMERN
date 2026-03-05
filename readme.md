@@ -84,6 +84,10 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 ### [Day 16 – Validation Practice](./Day16-validation-practice/) 
 - Rebuilt the Members API to reinforce Joi validation, ObjectId checks, and      centralized error handling.
 
+### [Day 17 – Authentication Basics](./Day17-auth-basics/)  
+- Implemented **Register + Login routes** with Joi validation and centralized error handling.  
+- Added **bcrypt password hashing and comparison** for secure authentication.
+
 ---
 
 ## 🛠️ Tech Stack (Planned)
@@ -230,8 +234,28 @@ projectJ-60DaysToMERN/
 │   │   └── memberValidation.js
 │   └── README.md
 │
+├── Day17-auth-basics/
+│   ├── server.js
+│   ├── config.js
+│   ├── routes/
+│   │   ├── member.js
+│   │   └── auth.js
+│   ├── middlewares/
+│   │   ├── logger.js
+│   │   ├── errorHandler.js
+│   │   └── validateObjectId.js
+│   ├── models/
+│   │   ├── member.models.js
+│   │   └── user.models.js
+│   ├── validation/
+│   │   ├── memberValidation.js
+│   │   ├── registerValidation.js
+│   │   └── loginValidation.js
+│   └── README.md
+│
 ├── .gitattributes
 └── readme.md
+
 ```
 ## 🎯 Final Goal
 Build and deploy an **AI-powered Expense Manager** with:
