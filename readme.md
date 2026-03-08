@@ -88,6 +88,10 @@ Each day’s progress is documented in a separate folder (`Day1-basics`, `Day2-f
 - Implemented **Register + Login routes** with Joi validation and centralized error handling.  
 - Added **bcrypt password hashing and comparison** for secure authentication.
 
+### [Day 18 – JWT Token](./Day18-jwt-token/)  
+- Implemented **JWT generation on login** and returned the token to the client.  
+- Added **auth middleware** to verify tokens and protect routes, attaching decoded payload to `req.user`.
+
 ---
 
 ## 🛠️ Tech Stack (Planned)
@@ -253,9 +257,31 @@ projectJ-60DaysToMERN/
 │   │   └── loginValidation.js
 │   └── README.md
 │
+├── Day18-jwt-token/
+│   ├── server.js
+│   ├── config.js
+│   ├── db.js
+│   ├── controllers/
+│   │   └── authController.js
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   └── testRoute.js
+│   ├── middlewares/
+│   │   ├── logger.js
+│   │   ├── errorHandler.js
+│   │   ├── authHandler.js
+│   │   └── validateObjectId.js
+│   ├── models/
+│   │   └── user.models.js
+│   ├── validation/
+│   │   ├── validateRegistration.js
+│   │   └── validateLogin.js
+│   ├── config/
+│   │   └── db.js
+│   └── README.md
+│
 ├── .gitattributes
 └── readme.md
-
 ```
 ## 🎯 Final Goal
 Build and deploy an **AI-powered Expense Manager** with:
